@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="left-picture"></div>
+      <form action="#" method="post">
+        <input type="text" name="fullname" placeholder="Full Name" />
+        <br />
+        <input type="email" name="email" placeholder="Email" />
+        <br />
+        <input type="password" name="Password" placeholder="Password" />
+        <div class="password hidden password__visual--medium">Weak</div>
+        <input
+          type="password"
+          name="confirmpassword"
+          placeholder="Confirm Password"
+        />
+        <div class="password con hidden password__visual--true">
+          Please give the same password
+        </div>
+
+        <input type="date" name="BirthYear" placeholder="Date of Birth" />
+        <br />
+        <div class="for-gender">
+          <label for="gender">Male</label>
+          <input value="male" type="radio" name="gender" />
+          <label for="gender">Female</label>
+          <input value="female" type="radio" name="gender" />
+        </div>
+
+        <br />
+        <label for="profileImage">Upload a Profile Picture</label>
+        <input
+          type="file"
+          name="profileImage"
+          accept="image/*"
+          placeholder="Profile Image"
+        />
+        <br />
+        <div class="for__content--terms">
+          <label for="termsandconditions" id="terms"
+            >Terms and Conditions</label
+          >
+          <input
+            value="true"
+            id="terms"
+            type="checkbox"
+            name="termsandconditions"
+          />
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

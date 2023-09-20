@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --form-height: 50%;
+}
+
+body {
+  font-family: 'Mooli', sans-serif;
+}
+
+input::placeholder {
+  font-family: 'Mooli', sans-serif;
+}
+
+/* for form div */
+.form {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  top: 100px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 80%
+  );
+}
+
+.form > .left-picture {
+  width: 50%;
+  background-image: url('./coding.jpg');
+}
+
+.form form {
+  width: 50%;
+}
+form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+form input {
+  margin-top: 10px;
+  padding: 5px;
+  width: 90%;
+}
+.for-gender {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.for-gender > input {
+  display: flex;
+  margin: 0;
+}
+
+.for__content--terms {
+  height: fit-content;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+.for__content--terms label {
+  width: fit-content;
+}
+.for__content--terms input {
+  width: 60%;
+  display: flex;
+  border: 1px solid green;
+  margin: 0;
+}
+
+input[type='file'] {
+  margin-top: 2px;
+  border: none;
+}
+
+form input {
+  font-family: 'Mooli';
+}
+
+input:focus {
+  outline: none;
+}
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 5px solid #fff;
+  color: #fff;
+}
+
+input[type='submit'] {
+  color: white;
+  background-color: #0096ff;
+  border: none;
+}
+
+.password__visual--weak {
+  color: red;
+}
+.password__visual--medium {
+  color: yellow;
+}
+.password__visual--strong {
+  color: green;
+}
+.password {
+  font-size: 12px;
+  height: fit-content;
+}
+
+.password__visual--true {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width<=500px) {
+  .form {
+    flex-direction: column;
+  }
+  .form > .left-picture {
+    width: 100%;
+  }
+  .form form {
+    width: 100%;
+  }
+}
